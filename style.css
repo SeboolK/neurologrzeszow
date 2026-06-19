@@ -1089,9 +1089,221 @@ footer {
         font-size: 18px;
     }
 
-    .contact-nav nav {
+.contact-nav nav {
         gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+/* Uspokojony styl i poprawki mobilne */
+.card,
+.card-new,
+.stat-box,
+.trust-box,
+.symptom-box,
+.about-image img,
+.about-image-new img {
+    border-radius: 10px;
+}
+
+.btn,
+.btn-small,
+.btn-contact,
+.service-btn,
+.cta-btn {
+    border-radius: 8px;
+}
+
+.card:hover,
+.card-new:hover,
+.trust-box:hover,
+.symptom-box:hover,
+.service-btn:hover,
+.cta-btn:hover {
+    transform: translateY(-3px);
+}
+
+.card-new:hover {
+    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+.card-icon {
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.card-icon span {
+    display: block;
+    line-height: 1;
+}
+
+@media(max-width: 768px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: min(92%, 100% - 28px);
+    }
+
+    header,
+    .about-header,
+    .services-header,
+    .contact-header {
+        padding: 12px 0;
+    }
+
+    .nav,
+    .about-nav,
+    .services-nav,
+    .contact-nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    header h1,
+    .about-logo,
+    .services-logo,
+    .contact-logo {
+        font-size: 17px;
+        line-height: 1.35;
+    }
+
+    nav,
+    .about-nav nav,
+    .services-nav nav,
+    .contact-nav nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 18px;
+        margin-top: 0;
+    }
+
+    nav a,
+    .about-nav nav a,
+    .services-nav nav a,
+    .contact-nav nav a {
+        margin-left: 0;
+        font-size: 14px;
+        padding: 4px 0;
+    }
+
+    section {
+        padding: 56px 0;
+    }
+
+    .hero {
+        min-height: 680px;
+        height: auto;
+        padding: 120px 0 80px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 0 4px;
+    }
+
+    .hero-content h2,
+    .hero h2 {
+        font-size: 32px;
+        line-height: 1.25;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .hero-content .btn,
+    .btn {
+        font-size: 16px;
+        padding: 13px 22px;
+    }
+
+    .services {
+        padding: 70px 0;
+    }
+
+    .services-title {
+        width: 100%;
+        white-space: normal;
+        margin-top: 0;
+        font-size: 30px;
+        text-align: center;
+        line-height: 1.25;
+        padding: 10px 16px;
+    }
+
+    .cards,
+    .cards-wrapper,
+    .stats-grid,
+    .trust-grid,
+    .symptoms-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .card,
+    .card-new,
+    .stat-box,
+    .trust-box,
+    .symptom-box {
+        padding: 26px 22px;
+    }
+
+    .quote-section {
+        padding: 70px 20px;
+    }
+
+    .quote-section blockquote {
+        font-size: 23px;
+        line-height: 1.45;
+    }
+
+    .about-hero,
+    .services-hero,
+    .contact-hero,
+    .cta-section {
+        padding: 70px 20px;
+    }
+
+    .about-hero h2,
+    .services-hero h2,
+    .contact-hero h2,
+    .cta-section h2,
+    .trust-section h2,
+    .symptoms-section h2 {
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
+    .services-hero p,
+    .about-hero p,
+    .cta-section p {
+        font-size: 17px;
+    }
+
+    .services-content {
+        padding: 64px 0;
+    }
+
+    .services-content::before {
+        background-attachment: scroll;
+    }
+
+    .reveal,
+    .reveal-left,
+    .reveal-right,
+    .reveal-bottom {
+        transform: translateY(28px);
+    }
+
+    .reveal.active {
+        transform: translateY(0);
     }
 }
