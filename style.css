@@ -370,6 +370,23 @@ footer {
     padding: 20px;
 }
 
+.footer-credit {
+    margin-top: 8px;
+    font-size: 13px;
+    opacity: 0.78;
+}
+
+.footer-credit a {
+    color: #c8a96a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-credit a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 @media(max-width:768px){
     .nav{
         flex-direction: column;
